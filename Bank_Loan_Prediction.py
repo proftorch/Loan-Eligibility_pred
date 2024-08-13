@@ -7,12 +7,7 @@ import pickle
 
 
 
-# Determine the file path dynamically
 model_path = os.path.join(os.path.dirname(Bank_Loan_Prediction.py), 'Model', 'ML_1.pkl')
-
-# Load the model
-with open(model_path, 'rb') as file:
-    model = pickle.load(file)
 
 
 def run():
