@@ -6,7 +6,7 @@ from PIL import Image
 import pickle
 
 
-model = pickle.load(open('D:\Projects\LoanPred\Model\ML_1.pkl', 'rb'))
+model = pickle.load(open('Model/ML_1.pkl', 'rb'))
 
 def run():
     img1 = Image.open('bank.jpeg')
