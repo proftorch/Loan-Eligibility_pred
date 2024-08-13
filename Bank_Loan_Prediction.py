@@ -6,7 +6,14 @@ from PIL import Image
 import pickle
 
 
-model = pickle.load(open('Model/ML_1.pkl', 'rb'))
+
+# Determine the file path dynamically
+model_path = os.path.join(os.path.dirname(Bank_Loan_Prediction.py), 'Model', 'ML_1.pkl')
+
+# Load the model
+with open(model_path, 'rb') as file:
+    model = pickle.load(file)
+
 
 def run():
     img1 = Image.open('bank.jpeg')
